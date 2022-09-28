@@ -1,5 +1,20 @@
+body {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: fit-content;
+  overflow-y: scroll;
+  margin: 0px;
+}
+
 #cs1300-gallery {
-  background-color: lightblue;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  gap: 15px;
 }
 
 /* Uncomment below if images are way too big.
@@ -11,4 +26,24 @@ Selects all image tags and makes them 500px;
 
 .gallery-container {
   /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+}
+
+.gallery-item {
+  padding: 10px;
+  height: 150px;
+  width: 150px;
+  background: pink;
+  border-radius: 10px;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  background: lightpink;
 }
